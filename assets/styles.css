@@ -1,0 +1,107 @@
+:root {
+  --ink: #111827;
+  --muted: #4b5563;
+  --line: #d1d5db;
+  --surface: #ffffff;
+  --soft: #f8fafc;
+  --teal: #0f766e;
+  --green: #15803d;
+  --red: #dc2626;
+}
+
+html,
+body,
+[class*="css"] {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+}
+
+.main .block-container {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 1rem;
+}
+
+.sidebar-title {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-link {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+.nav-link[data-active="true"] {
+  color: #ffffff;
+  background: var(--teal);
+  border-color: var(--teal);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+}
+
+h1 {
+  color: var(--ink);
+  font-weight: 750;
+}
+
+h3 {
+  margin-top: 1.25rem;
+}
+
+[data-testid="stMetric"] {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+[data-testid="stMetricLabel"] {
+  color: var(--muted);
+}
+
+[data-testid="stMetricValue"] {
+  color: var(--ink);
+}
+
+[data-testid="stSidebar"] {
+  background: var(--soft);
+  border-right: 1px solid var(--line);
+}
+
+.stDataFrame {
+  border-radius: 8px;
+}
